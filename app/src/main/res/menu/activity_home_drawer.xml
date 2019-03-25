@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/seguimiento"
+            android:title="Seguimiento" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/bluetooth"
+            android:title="Dispositivos" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/donut"
+            android:title="Informes Nutricionales" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/barchart"
+            android:title="Peso" />
+
+        <item
+            android:id="@+id/goals"
+            android:icon="@drawable/goals"
+            android:title="Objetivos" />
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/settings"
+                android:title="Configuracion" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/exit"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

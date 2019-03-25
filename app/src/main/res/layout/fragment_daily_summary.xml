@@ -1,0 +1,41 @@
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="apps.my.p2017.DailySummaryViewModel"></variable>
+    </data>
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/balance_card"
+                bind:vm="@{vm}"></include>
+
+            <include
+                layout="@layout/nutrition_card"
+                bind:vm="@{vm}"></include>
+
+            <include
+                layout="@layout/activities_card"
+                bind:vm="@{vm}"></include>
+
+            <include
+                layout="@layout/weight_card"
+                bind:vm="@{vm}"></include>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>
